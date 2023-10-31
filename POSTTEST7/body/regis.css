@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form hr {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.remember {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.remember label {
+    color: #333;
+}
+
+.login-btn {
+    background: #364f6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: gray;
+}
+
+.form-container {
+    text-align: center;
+}

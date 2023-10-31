@@ -1,0 +1,17 @@
+body {
+    background-image: url(../img/pakai3.png);
+    margin-top: 30px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    margin-right: 600px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 991.98px){
+
+body {
+    margin-right: 0px;
+    margin-top: 10px;
+}
+}
