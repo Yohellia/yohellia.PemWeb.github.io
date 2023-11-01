@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 03:14 PM
+-- Generation Time: Nov 01, 2023 at 07:29 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -39,6 +39,34 @@ CREATE TABLE `bookingservice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `bookingservice`
+--
+
+INSERT INTO `bookingservice` (`id`, `nama`, `telpon`, `motor`, `servis`, `tanggal`, `jam`, `gambar`) VALUES
+(28, 'shelomita yohellia', '081122334455', 'Vario 125', 'Ganti oli', '1111-11-11', '11:11:00', 'shelomita yohellia.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'Shelomita Yohellia', '$2y$10$4w5xyPQ3KQkCQZJjpCSELe/4XvM1kHDz89bumyNYisNdz9ujsi8Eu'),
+(2, 'Ipul', '$2y$10$bVTZLLqDeIVwW/RmLfnF.OS53lva6aWt.k9hvnrNRbag1DV00FI9W'),
+(3, 'Lia', '$2y$10$vXUeD4QpFJyxaSxsFQQyGOueROwrjAYddObgdJ7kLzRUviiRVYn.e');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -49,6 +77,12 @@ ALTER TABLE `bookingservice`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -56,7 +90,13 @@ ALTER TABLE `bookingservice`
 -- AUTO_INCREMENT for table `bookingservice`
 --
 ALTER TABLE `bookingservice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
